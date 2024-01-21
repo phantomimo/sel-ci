@@ -67,7 +67,7 @@ var controlador_asignaturas = new Vue({
 			});
 		},
 		eliminarAsignatura: function(p_asignatura){
-			if(confirm("Desea eliminar la asignatura?")){
+			if(confirm("Desea eliminar la registro?")){
 				this.$http.post('eliminar_asignatura', p_asignatura).then(function(){
 					this.recuperarAsignaturas()
 				}, function(){

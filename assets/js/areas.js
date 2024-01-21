@@ -65,7 +65,7 @@ var controlador_areas = new Vue({
 			});
 		},
 		eliminarArea: function(p_area){
-			if(confirm("Desea eliminar el area?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_area', p_area).then(function(){
 					this.recuperarAreas()
 				}, function(){

@@ -90,7 +90,7 @@ var controlador_alumnos = new Vue({
 			})
 		},
 		eliminarAlumno: function(p_alumno){
-			if(confirm("Desea eliminar el alumno?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_alumno', p_alumno).then(function(){
 					this.recuperarAlumnos()
 				}, function(){

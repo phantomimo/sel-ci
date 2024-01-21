@@ -67,7 +67,7 @@ var controlador_usuarios = new Vue({
 			})
 		},
 		eliminarUsuario: function(p_usuario){
-			if(confirm("Desea eliminar el usuario?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_usuario', p_usuario).then(function(){
 					this.recuperarUsuarios()
 				}, function(){

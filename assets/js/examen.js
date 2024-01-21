@@ -231,10 +231,7 @@ var vm = new Vue({
 		},
 		mostrarVentanaEdicion (p_pregunta, p_asignatura, p_operacion) {
 			event.preventDefault()					
-			// this.pregunta = p_pregunta
 			if (p_operacion == this.opInsertar) {
-				//p_pregunta = this.pregunta_nueva
-				// p_pregunta = Object.assign({}, this.pregunta_nueva)							
 				this.obtenerNuevoNumero(p_pregunta)				
 				this.sleep(300).then(() => { 					
 					this.pregunta = Object.assign({}, p_pregunta)
@@ -252,13 +249,14 @@ var vm = new Vue({
 				this.asignatura = p_asignatura	
 				this.operacion = p_operacion
 				this.modalEdicion = true	
-			}
-			// this.$nextTick(function () {
-			// 	this.mostrarEditor()									  			
-			// })			
+			}	
 			this.errors = []
 			this.preguntaAntesEditar = Object.assign({}, this.pregunta)				
-			this.editorAvanzado = false						
+			this.editorAvanzado = false		
+			// this.mostrarEditor()	
+			this.$nextTick(() => {
+				this.mostrarEditor()
+			})											
 		},
 		mostrarVentanaBusqueda () {
 			event.preventDefault()				

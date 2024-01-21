@@ -66,7 +66,7 @@ var controlador_grados = new Vue({
 			});
 		},
 		eliminarGrado: function(p_grado){
-			if(confirm("Desea eliminar el grado?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_grado', p_grado).then(function(){
 					this.recuperarGrados()
 				}, function(){

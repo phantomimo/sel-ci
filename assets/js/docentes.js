@@ -57,7 +57,7 @@ var controlador_docentes = new Vue({
 			});
 		},
 		eliminarDocente: function(p_docente){
-			if(confirm("Desea eliminar el docente?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_docente', p_docente).then(function(){
 					this.recuperarDocentes()
 				}, function(){

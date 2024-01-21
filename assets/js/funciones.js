@@ -78,7 +78,7 @@ var funciones = {
         operacion: null,
         isFixed: false,
         nombreAplicacion: 'SEL-1.0',
-        rutaAplicacion: 'sel-ci/',
+        rutaAplicacion: '/',
         modalBusqueda: false,
         tituloModuloSing: 'registro',
         VALOR_SI: 'S',

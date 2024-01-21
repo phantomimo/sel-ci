@@ -19,3 +19,4 @@ application/logs/*
 
 .editorconfig
 sel-ci.code-workspace
+application/session/

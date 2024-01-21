@@ -257,8 +257,8 @@
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/vue.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/vue-resource.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/notifications/vue-toasted.min.js"></script>											
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/funciones.js?1.0.2"></script>				
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/examen.js?1.0.2.200613"></script>	
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/funciones.js?1.0.2.20240119"></script>				
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/examen.js?1.0.2.20240119"></script>	
 
 </body>
 </html>

@@ -55,7 +55,7 @@ var controlador_niveles = new Vue({
 			});
 		},
 		eliminarNivel: function(p_nivel){
-			if(confirm("Desea eliminar el nivel?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_nivel', p_nivel).then(function(){
 					this.recuperarNiveles()
 				}, function(){

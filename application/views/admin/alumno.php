@@ -30,7 +30,7 @@
 						<form @submit.native.prevent="guardarAlumno(alumno)">								
 							<div class="form-group">
 								<label for="numeroControl">Número de control:</label>
-								<input type="text" class="form-control" v-model.lazy="alumno.numero_control" id="numeroControl" placeholder="Número de control" />
+								<input type="text" class="form-control" v-model.lazy="alumno.numero_control" id="numeroControl" placeholder="Número de control" readonly="true" />
 							</div>								
 							<div class="form-group">
 								<label for="nombreAlumno">Nombre:</label>

@@ -76,7 +76,7 @@ var controlador_grupos = new Vue({
 			})
 		},
 		eliminarGrupo: function(p_grupo){
-			if(confirm("Desea eliminar el grupo?")){
+			if(confirm("Desea eliminar el registro?")){
 				this.$http.post('eliminar_grupo', p_grupo).then(function(){
 					this.recuperarGrupos()
 				}, function(){

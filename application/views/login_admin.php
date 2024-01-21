@@ -24,7 +24,7 @@
         <br/>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
         <div class="btn-warning"><?php if(isset($resultado)) echo $resultado->motivo; else echo ''; ?></div>        
-        <p class="mt-5 mb-3 text-muted">&copy; 2020 Instituto Educativo Montebello</p>
+        <p class="mt-5 mb-3 text-muted">&copy; 2020-2023 Instituto Educativo Montebello</p>
     </form>
 </body>
 </html>
