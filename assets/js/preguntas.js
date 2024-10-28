@@ -158,6 +158,9 @@ var vm = new Vue({
 			this.errors = []
 			this.preguntaAntesEditar = Object.assign({}, this.pregunta)		
 			this.editorAvanzado = false		
+			this.$nextTick(() => {
+				this.mostrarEditor()
+			})				
 		},
 		cerrarModal(){
 			Object.assign(this.pregunta, this.preguntaAntesEditar)						

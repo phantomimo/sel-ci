@@ -240,6 +240,9 @@ var vm = new Vue({
 					this.asignatura = p_asignatura	
 					this.operacion = p_operacion
 					this.modalEdicion = true		
+					this.$nextTick(() => {
+						this.mostrarEditor()
+					})							
 				})					
 			}			
 			else {
@@ -249,14 +252,14 @@ var vm = new Vue({
 				this.asignatura = p_asignatura	
 				this.operacion = p_operacion
 				this.modalEdicion = true	
+				this.$nextTick(() => {
+					this.mostrarEditor()
+				})						
 			}	
 			this.errors = []
 			this.preguntaAntesEditar = Object.assign({}, this.pregunta)				
-			this.editorAvanzado = false		
-			// this.mostrarEditor()	
-			this.$nextTick(() => {
-				this.mostrarEditor()
-			})											
+			// this.editorAvanzado = false		
+			// this.mostrarEditor()										
 		},
 		mostrarVentanaBusqueda () {
 			event.preventDefault()				
@@ -273,7 +276,7 @@ var vm = new Vue({
 			event.preventDefault()								
 		},
 		mostrarEditor()	{	
-			event.preventDefault()
+			// event.preventDefault()
 			this.editorAvanzado = true
 			this.suneditor = SUNEDITOR.create('texto-pregunta', {
 				display: 'block',

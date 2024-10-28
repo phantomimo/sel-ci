@@ -30,22 +30,21 @@
 		<table class="table table-hover" v-if="!cargando_registros">
 			<thead>
 				<tr>
-					<th> No. </th>
+					<th tyle="width:10%"> No. </th>
 					<!-- <th style="width:5%; text-align:center"> Unidad </th>										 -->
-					<th style="width:45%"> Pregunta </th>						
-					<th style="width:40%"> Opciones </th>
-					<th class="operaciones-tabla">
-						<button v-if="examen.id_examen" class="btn btn-sm btn-primary" v-on:click="mostrarVentanaBusqueda()"><span class="oi oi-search" title="Buscar en el banco de preguntas" aria-hidden="true"></span></button> 
+					<th style="width:70%"> Pregunta </th>						
+					<th style="width:20%" class="operaciones-tabla">
+						<!-- <button v-if="examen.id_examen" class="btn btn-sm btn-primary" v-on:click="mostrarVentanaBusqueda()"><span class="oi oi-search" title="Buscar en el banco de preguntas" aria-hidden="true"></span>Buscar</button>  -->
 						<button v-if="asignatura.id_asignatura" class="btn btn-sm btn-primary" v-on:click="mostrarVentanaEdicion(pregunta_nueva, asignatura, opInsertar)"> Nuevo </button>
 					</th>
 				</tr>
 			</thead>
 			<tbody v-if="preguntas.length">
 				<tr v-for="pregunta in preguntasFiltro" @click="activarFila(pregunta.id_pregunta)" :class="{ active: filaActiva == pregunta.id_pregunta }">
-					<td>{{ pregunta.numero }}</td>					
+					<td >{{ pregunta.numero }}</td>					
 					<!-- <td style="text-align:center">{{ pregunta.unidad }}</td>						 -->
-					<td v-html="pregunta.pregunta"></td>
 					<td>
+						<div v-html="pregunta.pregunta"></div>
 						<div class="container-fluid row">
 							<div class="card">
 								<div class="card-body">
@@ -258,7 +257,7 @@
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/vue-resource.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/notifications/vue-toasted.min.js"></script>											
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/funciones.js?1.0.2.20240119"></script>				
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/examen.js?1.0.2.20240119"></script>	
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/examen.js?1.0.2.20240120"></script>	
 
 </body>
 </html>

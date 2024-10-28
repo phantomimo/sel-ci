@@ -66,7 +66,9 @@
 					<th style="width:45%"> Pregunta </th>						
 					<th style="width:40%"> Opciones </th>
 					<th class="operaciones-tabla">
-						<div class="scroll-visible"><button v-if="asignatura.id_asignatura" class="btn btn-sm btn-primary" v-on:click="mostrarVentanaEdicion(pregunta_nueva, asignatura, opInsertar)"> Nuevo </button></div>
+						<div class="scroll-visible">
+							<button v-if="asignatura.id_asignatura" class="btn btn-sm btn-primary" v-on:click="mostrarVentanaEdicion(pregunta_nueva, asignatura, opInsertar)"> Nuevo </button>
+						</div>
 					</th>
 				</tr>
 			</thead>
@@ -224,8 +226,8 @@
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/vue-resource.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/notifications/vue-toasted.min.js"></script>					
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/vue/vue-router.js"></script>						
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/funciones.js?1.0.2"></script>				
-	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/preguntas.js?1.0.1.110620"></script>
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/funciones.js?1.0.2.20240122"></script>				
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/js/preguntas.js?1.0.1.20240121"></script>
 	<!-- suneditor -->
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/editor/js/suneditor.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url() ?>assets/editor/js/codemirror.min.js"></script>
